@@ -138,6 +138,7 @@ nav{
     margin-top: 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     gap: 1em;
 }
 .grid-item-header{
@@ -211,5 +212,33 @@ footer{
     }
     .header-link{
         font-size: 20px;
+    }
+    /*Hero*/
+    .hero{
+        height: 700px;
+    }
+    .main-hero-content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+    .hero-text{
+        align-items: center;
+    }
+    .hero-text p{
+        text-align: center;
+    }
+    .hero-image{
+        display: none;
+    }
+    /*Main Grid*/
+    .main-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .grid-item{
+        width: 80%;
     }
 }
