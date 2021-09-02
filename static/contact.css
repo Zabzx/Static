@@ -1,0 +1,149 @@
+/*Global*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); /*Poppins*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+.logo{
+    color: #01A0C2;
+    flex: 2;
+    font-size: 22px;
+}
+.header-link{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    padding: 0px 10px 10px 10px;
+}
+.header-link::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #01A0C2;
+    transition: cubic-bezier(0.77, 0, 0.175, 1) 0.3s;
+}
+.header-link:hover::after{
+    width: 100%;
+}
+nav{
+    flex: 1;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.burger{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    display: none;
+}
+.burger div{
+    height: 3px;
+    width: 30px;
+    margin-top: 5px;
+    background-color: #01A0C2;
+    border-radius: 40px;
+}
+
+/*Contact*/
+.contact{
+    border: 3px solid #B2B2B2;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+}
+.contact h1{
+    color: #01A0C2;
+}
+.our-location{
+    margin-top: 20px;
+}
+.email{
+    margin-top: 40px;
+}
+.contact-number{
+    margin-top: 40px;
+}
+.contact ul{
+    margin-left: 10px;
+}
+footer{
+    margin-top: 100px;
+    text-align: center;
+    background-color: #01A0C2;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 600px){
+    /*Header*/
+    html, body{
+        overflow-x: hidden;
+        position: relative;
+    }
+    .logo{
+        font-size: 16px;
+    }
+    .burger{
+        display: block;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-links{
+        position: absolute;
+        top: 75px;
+        right: 0;
+        flex-direction: column;
+        height: 75vh;
+        background-color: #01A0C2;
+        width: 100%;
+        align-items: center;
+        transform: translateX(100%);
+        transition: cubic-bezier(0.23, 1, 0.320, 1) 0.3s;
+    }
+    .nav-active{
+        transform: translateX(0%);
+        transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
+        z-index: 5;
+    }
+    .header-link{
+        font-size: 20px;
+        color: white;
+    }
+    /*Contact*/
+    .contact{
+        width: 80%;
+    }
+}
