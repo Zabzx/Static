@@ -150,9 +150,15 @@ footer{
         /*Filter buttons*/
         .filter-btns{
             display: flex;
+            justify-content: center;
+            justify-content: space-between;
+        }
+        #tvs{
+            margin-right: 0px;
         }
         .filter-btns button{
             font-size: 10px;
+            padding: 7px;
         }
         /*Instock Grid*/
         .instock-grid{
