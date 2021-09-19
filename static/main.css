@@ -134,12 +134,32 @@ nav{
 }
 /*Extend*/
 .extend{
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .ext-txt{
     width: 50%;
+}
+.ext-txt h2{
+    position: relative;
+}
+.ext-txt h2::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #01A0C2;
+}
+.extend2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    height: 90vh;
 }
 
 /*Main Grid*/
