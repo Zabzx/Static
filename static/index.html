@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Static | Home</title>
 </head>
 <body>
@@ -43,7 +44,7 @@
                     and you can choose between multiple means of purchasing.
                 </p>
                 <div class="hero-btn">
-                    <button>Read More</button>
+                    <a href="#grid-area"><button>Read More</button></a>
                 </div>
             </div>
             <div class="hero-image">
@@ -52,6 +53,7 @@
         </div>
     </div>
     <!--Extend-->
+    <div data-aos="zoom-in-down">
     <div class="ext-container">
     <section class="extend container">
         <div class="ext-img">
@@ -62,16 +64,21 @@
         </div>
     </section>
     </div>
+    </div>
 
+    <div data-aos="zoom-in-up">
     <section class="extend2 container">
-        <div class="ext2-txt">
-            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, quia.</h3>
+        <div class="ext-txt">
+            <h2>Wide range on high quality tablets and personal computers.</h3>
         </div>
         <div class="ext2-img">
             <img src="img/extend2.png" alt="">
         </div>
     </section>
+    </div>
+
     <!--Grid Area-->
+    <div id="grid-area">
     <div class="main-grid container">
         <div class="laptops grid-item">
             <div class="grid-item-header">
@@ -102,11 +109,16 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia cupiditate enim pariatur dolorum, vitae quas voluptate sapiente. Quia, expedita nam.</p>
         </div>
     </div>
+    </div>
 
     <!--Footer-->
     <footer>
         <p>Made on August 29th 2021 by Zabz</p>
     </footer>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     </body>
 </html>
