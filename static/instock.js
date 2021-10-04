@@ -61,6 +61,38 @@ const items = [
         brand: 'Logitec',
         price: '$45',
         image: 'img/items/logitec1.png'
+    },
+    {
+        id: 'Acer Swift',
+        type: 'laptop',
+        brand: 'Acer',
+        price: '$500',
+        image: 'img/items/acer-swift.png'
+    },
+    {
+        id: 'Dell XPS',
+        brand: 'Dell',
+        type: 'laptop',
+        price: '$900',
+        image:'img/items/dell-xps.jpg'
+    },
+    {
+        id: 'HP Pavillion',
+        type: 'laptop',
+        price: '$600',
+        image: 'img/items/hp-pavillion.jpg'
+    },
+    {
+        id: 'iPhone 13',
+        type: 'phone',
+        price: '$1300',
+        image: 'img/items/iphone-13.png'
+    },
+    {
+        id: 'Pixel 5a',
+        type: 'phone',
+        price: '$800',
+        image: 'img/items/pixel-5a.jpg'
     }
 ];
 //Filter button selectors
