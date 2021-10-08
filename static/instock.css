@@ -74,18 +74,22 @@ nav{
     margin-top: 50px;
 }
 .filter-btns button{
-    padding: 10px;
+    padding: 10px 20px;
     border: 2px solid #01A0C2;
     color: #01A0C2;
     background: none;
     margin-right: 20px;
     cursor: pointer;
+    transition: 0.3s;
 }
-
+.filter-btns button:active{
+    transform: scale(0.7);
+}
 /*Grid Item Cards*/
 .instock-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax();
     justify-items: center;
     margin-top: 50px;
     row-gap: 2em;
@@ -95,12 +99,18 @@ nav{
     border: 3px solid #B2B2B2;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    align-self: start;
+    padding: 1em;
 }
 .grid-item-card img{
     width: 100%;
 }
 .grid-item-card h1, .grid-item-card p{
     text-align: center;
+}
+#item-title{
+    color: #01A0C2;
+    border-bottom: 2px solid #01A0C2;
 }
 
 /*Footer*/
