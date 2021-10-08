@@ -133,8 +133,8 @@ nav{
     font-size: 20px;
     transition: 0.3s;
 }
-.hero-btn button:hover{
-    transform: scale(1.2);
+.hero-btn button:active{
+    transform: scale(0.7);
     cursor: pointer;
 }
 /*Extend*/
