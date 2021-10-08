@@ -4,56 +4,57 @@ const items = [
         id: `LG '55`,
         type: 'tv',
         brand: 'LG',
-        price: '$200',
+        price: '$1800',
         image: 'img/items/lg1.jpg'
     },
     {
         id: 'iPhone 11',
         type: 'phone',
         brand: 'Apple',
-        price: '$100',
+        price: '$900',
         image: 'img/items/iphone1.png'
     },
     {
         id: 'Microsoft Surface',
         type: 'laptop',
         brand: 'Microsoft',
-        price: '$110',
+        price: '$600',
         image: 'img/items/microsoftsurface1.jpg'
     },
     {
         id: 'Asus VivoBook',
         type: 'laptop',
         brand: 'Asus',
-        price: '$450',
+        price: '$550',
         image: 'img/items/asus1.jpg'
     },
     {
         id: 'Sony Pulse 3D',
         type: 'headset',
         brand: 'Sony',
-        price: '$50',
+        price: '$60',
         image: 'img/items/sony1.jpg'
     },
     {
         id: `TCL '32`,
         type: 'tv',
         brand: 'TCL',
-        price: '$500',
+        price: '$1200',
         image: 'img/items/tcl2.jpg'
     },
     {
         id: 'Samsung Galaxy Fold Z',
         type: 'phone',
-        band: 'Samsung',
-        price: '$600',
+        brand: 'Samsung',
+        price: '$1100',
         image: 'img/items/sphone1.jpg'
     },
     {
         id: `Sony '55`,
         type: 'tv',
         brand: 'Sony',
-        image: 'img/items/sonytv1.jpg'
+        image: 'img/items/sonytv1.jpg',
+        price: '$2000'
     },
     {
         id: 'Logitech G Pro',
@@ -78,18 +79,21 @@ const items = [
     },
     {
         id: 'HP Pavillion',
+        brand: 'HP',
         type: 'laptop',
         price: '$600',
         image: 'img/items/hp-pavillion.jpg'
     },
     {
         id: 'iPhone 13',
+        brand: 'Apple',
         type: 'phone',
         price: '$1300',
         image: 'img/items/iphone-13.png'
     },
     {
         id: 'Pixel 5a',
+        brand: 'Google',
         type: 'phone',
         price: '$800',
         image: 'img/items/pixel-5a.jpg'
@@ -110,7 +114,7 @@ function displayItems(instockItems){
         <img src="${item.image}" alt="">
         <h1 id="item-title">${item.id}</h1>
         <p id="brand">${item.brand}</p>
-        <p id="price">${item.price}</p>
+        <p id="price"> Price: ${item.price}</p>
     </div>`
     }).join('');
     mainGrid.innerHTML = displayedItems;
