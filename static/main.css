@@ -19,6 +19,7 @@ html{
 }
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 /*Header*/
 .header-container{
@@ -174,12 +175,26 @@ nav{
     height: 5px;
     background-color: #01A0C2;
 }
+.ext-2 {
+    background-color: black;
+}
+.ext-2::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 1700px;
+    height: 200px;
+    background-color: white;
+    transform: rotate(-5deg) translateX(-20px);
+}
 .extend2{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 100px;
     height: 90vh;
+    color: white;
 }
 
 /*Main Grid*/
