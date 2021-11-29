@@ -139,9 +139,24 @@ filterBtns.forEach(btn => {
 })
 
 //Navbar
+const html = document.querySelector('html');
 const burger = document.querySelector('.burger');
+const burgerLines = document.querySelectorAll('.burger div')
+console.log(burgerLines)
 const navLinks = document.querySelector('.nav-links');
 
 burger.addEventListener('click', () => {
     navLinks.classList.toggle('nav-active');
+
+    if (navLinks.classList.contains('nav-active')) {
+        burgerLines.forEach((line) => {
+            line.style.backgroundColor = 'white';
+        });
+        html.style.overflow = 'hidden';
+    } else {
+        burgerLines.forEach((line) => {
+            line.style.backgroundColor = '#01A0C2';
+        })
+        html.style.overflow = 'auto';
+    }
 });
