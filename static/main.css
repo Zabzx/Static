@@ -246,6 +246,9 @@ footer{
     .logo{
         font-size: 16px;
     }
+    .logo-text {
+        display: none;
+    }
     .burger{
         display: block;
         justify-content: flex-end;

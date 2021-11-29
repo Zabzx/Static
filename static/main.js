@@ -22,9 +22,16 @@ window.addEventListener('scroll', () => {
 });
 
 //Navbar
+const html = document.querySelector('html');
 const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.nav-links');
 
 burger.addEventListener('click', () => {
     navLinks.classList.toggle('nav-active');
+
+    if (navLinks.classList.contains('nav-active')) {
+        html.style.overflow = 'hidden'
+    } else {
+        html.style.overflow = 'auto';
+    }
 });
